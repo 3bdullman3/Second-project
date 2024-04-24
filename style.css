@@ -1,0 +1,61 @@
+/* إعدادات العناوين */
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400; /* تخفيف ثقل الخط */
+    color: #333; /* تحسين لون الخط */
+}
+
+/* نمط المستخدم */
+#user {
+    text-align: center;
+    background-color: #f8f9fa; /* لون الخلفية: تغيير اللون ليكون أكثر حداثة */
+    border-radius: 15px; /* حواف دائرية أكثر نعومة */
+    padding: 10px 20px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* تحسين الظل ليكون أكثر نعومة */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* تأثيرات الانتقال */
+}
+
+/* تأثير عند تمرير المؤشر */
+#user:hover,
+#user:hover::before {
+    background-color: #e0f7fa; /* تغيير لون الخلفية عند التمرير */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* تحسين الظل عند التمرير */
+}
+
+/* نمط الجسم */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* استخدام تدرج ألوان حديث كخلفية للصفحة */
+    background: linear-gradient(120deg, #4a90e2, #9013fe);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; /* لتحسين قابلية القراءة */
+}
+
+/* نمط المنشورات */
+#post {
+    /* تغيير لون الخلفية إلى لون فاتح يتناسب مع خلفية الصفحة */
+    background-color: rgba(255, 255, 255, 0.8); /* خلفية بيضاء شفافة قليلاً */
+    border-radius: 12px; /* حواف دائرية أكثر نعومة */
+    font-size: 18px; /* حجم خط مشابه للمستخدم */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* تحسين الظل */
+    margin-top: 15px;
+    transition: transform 0.3s ease; /* تأثير الانتقال */
+}
+
+/* تأثير عند تمرير المؤشر على المنشور */
+#post:hover {
+    transform: scale(1.02); /* تكبير طفيف عند التمرير */
+}
+
+
+/* نمط المستخدم المحدد */
+#user.selected {
+    border: solid red 4px; /* تحسين حدود المستخدم المحدد */
+    padding: 8px 18px; /* ضبط البطانة الداخلية */
+}

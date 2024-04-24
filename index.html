@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="content" style="display: flex;">
+    <div style="width: 30%;">
+    <div id="users" style="width: 90% ; margin:  0 auto;">
+        <div id="user"> 
+            <h3>ana</h3>
+            <h3> ana@mail.com</h3>
+            
+        </div>
+        <div id="user"> 
+            <h3>ana</h3>
+            <h3> ana@mail.com</h3>
+            
+        </div>
+        <div id="user" class="selected"> 
+            <h3>ana</h3>
+            <h3> ana@mail.com</h3>
+            
+        </div>
+        <div id="user" class="selected"> 
+
+            <h3>ana</h3>
+            <h3> ana@mail.com</h3>
+            
+        </div>
+    </div>
+    
+    </div>
+    <div style="background-color: rgb(161, 161, 161 , 1); width: 70%; border-radius: 10px; " id="posts-continer "  >
+        <div id="posts" style="width: 90% ; margin:  0 auto;" >
+            <div id="post" >
+                <h3>yaaaaahl    aaaa</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, autem deleniti. Excepturi rem assumenda delectus, impedit quo, dolorum mollitia ipsa hic laudantium sunt optio enim similique ullam nisi, distinctio tenetur!</h4>
+
+            </div>
+            <div id="post" >
+                <h3>yaaaaahlaaaa</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, autem deleniti. Excepturi rem assumenda delectus, impedit quo, dolorum mollitia ipsa hic laudantium sunt optio enim similique ullam nisi, distinctio tenetur!</h4>
+
+            </div>
+            <div id="post">
+                <h3>yaaaaahlaaaa</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, autem deleniti. Excepturi rem assumenda delectus, impedit quo, dolorum mollitia ipsa hic laudantium sunt optio enim similique ullam nisi, distinctio tenetur!</h4>
+
+            </div>
+        </div>
+    
+    </div>
+    </div>
+</body>
+<script src="challengeR1.js"></script> 
+
+<script>
+    document.querySelectorAll("#user").forEach((user) => {
+    user.addEventListener("mouseenter", () => {
+        user.style.backgroundColor = "#cce7ff"; /* تغيير لون الخلفية عند اقتراب الماوس */
+        user.style.boxShadow = "0 6px 10px rgba(0, 0, 0, 0.3)"; /* تحسين الظل */
+    });
+
+    user.addEventListener("mouseleave", () => {
+        user.style.backgroundColor = "#f8f9fa"; /* إعادة لون الخلفية الأصلي */
+        user.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.15)"; /* إعادة الظل الأصلي */
+    });
+});
+
+</script>
+</html>
